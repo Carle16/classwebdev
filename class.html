@@ -3,6 +3,7 @@ task1
 GET =/task/myinfo.php?name=carle&surname=joradn&age=20&id=72771&faculty=IT
 
 task 2
+
 POST = /test/demo_form.php
 
 
@@ -13,5 +14,18 @@ POST = /test/demo_form.php
  	"faculty”: "IT",
  	“age”: 10,
 }
+ task 3
 
-
+<form action="/myinfo.php" method="get">
+  <label for="name">First name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="surname">Last name:</label><br>
+  <input type="text" id="surname" name="lname">
+  <label for="age">age:</label><br>
+  <input type="text" id="age" name="age"><br>
+  <label for="iD">ID code:</label><br>
+  <input type="text" id="ID" name="ID">
+  <label for="fcly"> faculty:</label><br>
+  <input type="text" id="fcly" name="faculty">
+ <input type="submit" value="Submit">
+</form>
